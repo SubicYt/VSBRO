@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        html,body{
+        position: relative;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(-45deg, #b683bb, #3913e4, #48f674, #74068a);
+      background-repeat: no-repeat;
+      background-size: 400% 400%; /* make the background 4 times larger than the container */
+      animation: gradient 10s ease infinite; /* animate the background using the gradient animation */
+      height: 100%;
+      width:100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column; 
+      overflow-x: hidden;
+      }
+      
+      @keyframes gradient {
+        0% {
+      background-position: 0% 50%;
+        }
+        50% {
+      background-position: 100% 50%;
+        }
+        100% {
+      background-position: 0% 50%;
+        }
+        }
+        .opening{
+            width: 300px;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto ;
+        }
+    </style>
+</head>
+<body>
+    <img class="opening" src="img7.jpg">
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>VSBRO</title>
+<style>
+    html,body{
+        position: relative;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(-45deg, #839abb, #e41313, #487af6, #8a0606);
+      background-repeat: no-repeat;
+      background-size: 400% 400%; /* make the background 4 times larger than the container */
+      animation: gradient 10s ease infinite; /* animate the background using the gradient animation */
+      height: 100%;
+      width:100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column; 
+      overflow-x: hidden;
+      }
+
+      @keyframes gradient {
+        0% {
+      background-position: 0% 50%;
+        }
+        50% {
+      background-position: 100% 50%;
+        }
+        100% {
+      background-position: 0% 50%;
+        }
+        }
+
+    .mess{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-bottom: 12px;
+        text-decoration: underline;
+        
+    }
+    .mess2{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-top: 0px;
+        margin-bottom: 12px;
+        text-decoration: underline;
+    }
+    .mess3{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 60px;
+        margin-top: 0px;
+        margin-bottom:20px;
+        text-decoration: underline;
+    }
+    .Description{
+      font-size:16px;
+      font-family: fantasy;
+      font-weight: light;
+    }
+
+    @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+    
+    /*Buttons for login and Sign up*/
+    .login,
+    .Sign-up{
+        background-color:rgb(240, 75, 75);
+    color: black;
+    height:30px;
+    width:125px;
+    border:none;
+    font-weight:bolder;
+    font-size:15;
+    cursor:pointer;
+    border-radius:8px;
+    transition:background-color 0.5s;
+    transition:opacity 1s;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    .guest-button
+    {
+      background-color:rgb(240, 75, 75);
+    color: black;
+    height:35px;
+    width:150px;
+    border:none;
+    font-weight:bolder;
+    font-size:15;
+    cursor:pointer;
+    border-radius:8px;
+    transition:background-color 0.5s;
+    transition:opacity 1s;
+    font-family: Arial, Helvetica, sans-serif;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    margin-bottom: 15px;
+    }
+    .mattsButton{
+      background-color:rgb(240, 75, 75);
+    color: black;
+    height:45px;
+    width:150px;
+    border:none;
+    font-weight:bolder;
+    font-size:15;
+    cursor:pointer;
+    border-radius:8px;
+    transition:background-color 0.5s;
+    transition:opacity 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    margin-bottom: 15px;
+    }
+    .mattsButton:hover{
+      opacity: 0.6;
+    }
+    
+    .login:hover,
+    .Sign-up:hover,
+    .guest-button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  opacity: 0.2;
+}
+      
+    .Title-Page{
+        text-align: center;
+        margin-top: 60px;
+        font-size: 50px;
+        font-weight: bold;
+    }
+    .thumbnail {
+        width: 300px;
+        display: block;
+      }
+
+    .rapgod{
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+</style>
+</head>
+<body>
+    <div class="Title-Page">
+        <p class="mess">Welcome</p>
+        <p class="mess2">To</p>
+        <p class="mess3">VSBRO</p> 
+        <p class="Description">
+          ANYONE CAN BE A BRO!
+        </p>
+        <button class="Sign-up">
+            Sign Up
+        </button>
+        <form action="LoginPage.html">
+          <button class="login">
+            Login
+        </button></form>
+    <div>
+        <button class="guest-button">Continue As Guest</button>
+        <audio class="rapgod" controls><source 
+          src="onlymp3.to - Life Could Be A Dream-XfqOB4hvxlY-256k-1654551463781.mp3">
+        </audio>
+        <a href="matt.html" target="_blank"><button class="mattsButton">Matt's Contribution</button></a>
+</body>
+</html>
