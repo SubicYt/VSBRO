@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script src="LoginBackend.js"></script>
+   <title>VSBRO</title>
+   <style>
+     
+     html,body{
+        position: relative;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(-45deg, #b683bb, #3913e4, #48f674, #74068a);
+      background-repeat: no-repeat;
+      background-size: 400% 400%; /* make the background 4 times larger than the container */
+      animation: gradient 10s ease infinite; /* animate the background using the gradient animation */
+      height: 100%;
+      width:100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column; 
+      overflow-x: hidden;
+      }
+      
+      @keyframes gradient {
+        0% {
+      background-position: 0% 50%;
+        }
+        50% {
+      background-position: 100% 50%;
+        }
+        100% {
+      background-position: 0% 50%;
+        }
+        }
+        .LogPage{
+        text-align: center;
+        margin-top: 12px;
+        font-size: 50px;
+        font-weight: bold;
+        }
+        .Title{
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          text-decoration: underline;
+          font-size:65px;
+        }
+        .GoBack{
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          font-size: 17px;
+          font-weight: lighter;
+          text-decoration:underline;
+          transition: opacity 0.5s;
+          color:black
+        }
+        .GoBack:hover{
+          opacity:0.6;
+        }
+
+        .Email-box,
+        .Password-box{
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          border-radius: 8px;
+          border:none;
+          width: 230px;
+          height: 40px;
+          font-size: 20px;
+          margin-bottom: 12px;
+        }
+        .img1{
+          width:300px;
+          height: 300px;
+          margin-left: auto;
+          margin-right:auto;
+          
+        }
+        .ifurbored{
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          text-decoration: underline;
+          font-size:20px;
+          text-align: center;
+          color:black;
+        }
+        .Confirm{
+          background-color:rgb(20, 130, 255);
+    color: rgb(255, 255, 255);
+    height:60px;
+    width:175px;
+    border:none;
+    font-weight:bold;
+    font-size:15;
+    cursor:pointer;
+    border-radius:8px;
+    transition:background-color 0.5s;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom: 12px;
+        }
+      
+   </style>
+</head>
+
+<body>
+    
+  
+  <div class="LogPage">
+    <p class="Title">
+      VSBRO
+    </p>
+    <a href="TheBroNews.html"> <p class="GoBack">
+      BACK TO HOME PAGE
+    </p></a>
+    <input class="Email-box" type="text" placeholder="Email/UsrName" id="usrname">
+    <input class="Password-box" type="password" placeholder="Password" id="pass">
+    </div>
+    
+    <button class="Confirm" onclick="validate()">Login</button>
+      <img class="img1" src="when-meme.gif">
+    
+      <a href="https://www.youtube.com/watch?v=Y7m59wRKXe4&ab_channel=JimKwik" target="_blank"> <p class="ifurbored">
+      If you dont remember your login info CLICK HERE
+    </p></a>
+</body>
+</html>
